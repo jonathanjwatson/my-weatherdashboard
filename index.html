@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https:cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="style.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <nav class="navbar navbar-dark bg-darK">
-    <Span class="navbar-brand-mb-0 h1">Weather Dahboard</Span>
-    </nav>
 
-    <p class="lead">Search for a city:
-    </p>
-    <div class="Search_field">
-      <inpout type="text" id="city-location">
-        <button type="submit"><img src="magnifying_glass.png"alt="Search"/></button>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 first-column">
+        <p class="lead">Search for a City:</p>
+        <input type="text" id="city-search">
+        <button data-location="city-loc" type="submit" id="city-location"><img src="magnifying_glass.png"
+            alt="Search" /></button>
+        <div class="cities-list"></div>
       </div>
-      <div class="city"></div>
-      <div class="wind"></div>
-      <div class="humidity"></div>
-      <div class="temp"></div>
-      <script src="scripts.js"></script>
+      <div class="weather-result col-sm-8">
+        <div class="city"></div>
+        <div class='time'></div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+        <div class="tempF"></div>
+        <div class="uv-index"></div>
+        <div class="card-deck forecast-columns">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="5-Day Forecast">
+            <div class="card-city1">
+              <h5 class="card-title1"></h5>
+              <div class="city-forecast"></div>
+              <div class="wind-forecast"></div>
+              <div class="humidity-forecast"></div>
+              <div class="temp-forecast"></div>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="5-Day Forecast">
+            <div class="card-city2">
+              <h5 class="card-title2"></h5>
+              <p class="card-text"></p>
+
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="5-Day Forecast">
+            <div class="card-city3">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="5-Day Forecast">
+            <div class="card-city4">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="..." alt="5-Day Forecast"">
+ <div class=" card-city5">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
