@@ -1,4 +1,3 @@
-// http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=4e9688c472c7e00d4dcc313124c3c2a7
 $(document).ready(function () {
     console.log("hello world");
     $("#city-location").on("click", function () {
